@@ -6,8 +6,11 @@ import Tilt from "react-parallax-tilt";
 const Hero = () => {
 	return (
 		<section className="min-h-screen">
-			<div className="absolute top-15 left-15 w-72 h-72 bg-purple-500 opacity-30 rounded-full filter blur-3xl animate-pulse z-0" />{" "}
-			<div className="section-container flex justify-between  min-h-screen flex-col md:flex-row">
+			<div className="section-container relative flex justify-between  min-h-screen flex-col md:flex-row">
+
+				{/* blob effect */}
+				<div className="absolute top-15 left-15 w-72 h-72 bg-purple-500 opacity-30 rounded-full filter blur-3xl animate-pulse z-0" />
+
 				{/*hero left  */}
 
 				<div className="flex flex-col gap-4 flex-1 mt-[80px] justify-center">
@@ -17,7 +20,7 @@ const Hero = () => {
 
 					<TypingExample />
 
-					<p className="text-white mt-2 mb-8 md:w-4/5">
+					<p className="mt-2 mb-8 md:w-4/5 text-gray-300">
 						I’m a full stack developer skilled in JavaScript, React,
 						Node.js, and MongoDB. I’ve built responsive, scalable
 						projects and am eager to grow professionally while
