@@ -6,6 +6,7 @@ import Skills from './page/skills/Skills'
 import Project from './page/project/Project'
 import Contact from './page/contact/Contact'
 import Home from './page/Home/Home'
+import Education from './page/education/Education'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Route index element={<Home />}/>
         <Route path='/skill' element={<Skills />}/>
         <Route path='/project' element={<Project />}/>
+        <Route path='/education' element={<Education />}/>
         <Route path='/contact' element={<Contact />} />
         {/* <Route path='*' element={<ErrorPage />} */}
       </Route>

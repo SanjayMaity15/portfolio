@@ -7,6 +7,7 @@ const navMenuItems = [
 	{ path: "/", label: "Home" },
 	{ path: "/skill", label: "Skill" },
 	{ path: "/project", label: "Project" },
+	{ path: "/education", label: "Education" },
 	{ path: "/contact", label: "Contact" },
 ];
 
@@ -57,7 +58,7 @@ const Navbar = () => {
 				navBgActive ? "shadow-xl backdrop-blur" : "bg-transparent"
 			}`}
 		>
-			<div className="section-container h-[80px] flex justify-between items-center">
+			<div className="section-container relative h-[80px] flex justify-between items-center">
 				{/* Logo / Name */}
 				<div>
 					<Link to="/">

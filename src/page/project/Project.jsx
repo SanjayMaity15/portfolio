@@ -4,9 +4,9 @@ import { Icon } from "@iconify/react";
 
 const Project = () => {
 	return (
-		<section>
+		<section className="pt-[80px]">
 			<div className="section-container text-white">
-				<h3 className="text-center mt-12 text-4xl font-bold">
+				<h3 className="text-center text-4xl font-semibold mt-4">
 					Projects
 				</h3>
 				<p className="text-center text-gray-300 mt-4 mb-16">
@@ -16,7 +16,7 @@ const Project = () => {
 				</p>
 
 				{/* project container */}
-				<div>
+				<div className="mb-16">
 					<ul className="grid md:grid-cols-2 gap-8">
 						{projects.map((item) => (
 							<li

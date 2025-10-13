@@ -22,7 +22,7 @@ const Hero = () => {
 
 					<p className="mt-2 mb-8 md:w-4/5 text-gray-300">
 						I’m a full stack developer skilled in JavaScript, React,
-						Node.js, and MongoDB. I’ve built responsive, scalable
+						Node.js, Express.js and MongoDB. I’ve built responsive, scalable
 						projects and am eager to grow professionally while
 						learning new technologies and creating impactful
 						software.
