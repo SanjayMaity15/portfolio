@@ -8,7 +8,7 @@ const TypingExample = () => {
 				words={[
 					"I am a Coder",
 					"I am a Fullstack Developer",
-					"I am a Engineer",
+					"I am an Engineer",
 				]}
 				loop={Infinity}
 				cursor
