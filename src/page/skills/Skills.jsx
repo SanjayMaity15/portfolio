@@ -5,6 +5,7 @@ import {
 	mernFrontendSkills,
 } from "../../utils/techSkill"; 
 import Tilt from "react-parallax-tilt";
+import { Icon } from "@iconify/react";
 
 const Skills = () => {
 	console.log(programmingLanguages);
@@ -36,12 +37,16 @@ const Skills = () => {
 							<h3 className="text-xl text-center font-bold text-purple-600 m-3">
 								Frontend
 							</h3>
-							<ul className=" flex items-center rounded-2xl flex-wrap p-4 gap-x-4 gap-y-6">
+							<ul className=" flex items-center rounded-2xl flex-wrap gap-x-4 gap-y-6">
 								{mernFrontendSkills.map((item) => (
-									<li key={item.id}>
-										<span className="bg-gray-100/10 px-6 py-2 w-[200px] rounded-full">
-											{item.name}
+									<li
+										key={item.id}
+										className="bg-gray-100/10 px-4 py-2 rounded-full flex items-center gap-2"
+									>
+										<span>
+											<Icon icon={item.icon} width={20} />
 										</span>
+										<span className="">{item.name}</span>
 									</li>
 								))}
 							</ul>
@@ -59,12 +64,16 @@ const Skills = () => {
 							<h3 className="text-xl text-center font-bold text-purple-600 m-3">
 								Backend
 							</h3>
-							<ul className=" flex items-center p-4 gap-x-4 gap-y-6 flex-wrap">
+							<ul className=" flex items-center gap-x-4 gap-y-6 flex-wrap">
 								{mernBackendSkills.map((item) => (
-									<li key={item.id}>
-										<span className="bg-gray-100/10 px-6 py-2 w-[200px] rounded-full">
-											{item.name}
+									<li
+										key={item.id}
+										className="bg-gray-100/10 px-4 py-2 rounded-full flex items-center gap-2"
+									>
+										<span>
+											<Icon icon={item.icon} width={20} />
 										</span>
+										<span className="">{item.name}</span>
 									</li>
 								))}
 							</ul>
@@ -81,12 +90,16 @@ const Skills = () => {
 							<h3 className="text-xl text-center font-bold m-3 text-purple-600">
 								Language
 							</h3>
-							<ul className=" flex items-center p-4 gap-x-4 gap-y-6 flex-wrap ">
+							<ul className=" flex items-center gap-x-4 gap-y-6 flex-wrap ">
 								{programmingLanguages.map((item) => (
-									<li key={item.id}>
-										<span className="bg-gray-100/10 px-6 py-2 w-[200px] rounded-full">
-											{item.name}
+									<li
+										key={item.id}
+										className="bg-gray-100/10 px-4 py-2 rounded-full flex items-center gap-2"
+									>
+										<span>
+											<Icon icon={item.icon} width={20} />
 										</span>
+										<span className="">{item.name}</span>
 									</li>
 								))}
 							</ul>
@@ -103,12 +116,16 @@ const Skills = () => {
 							<h3 className="text-xl text-center font-bold m-3 text-purple-600">
 								Tools
 							</h3>
-							<ul className=" flex items-center p-4 gap-x-4 gap-y-6 flex-wrap ">
+							<ul className=" flex items-center gap-x-4 gap-y-6 flex-wrap ">
 								{mernTools.map((item) => (
-									<li key={item.id}>
-										<span className="bg-gray-100/10 px-6 py-2 w-[200px] rounded-full">
-											{item.name}
+									<li
+										key={item.id}
+										className="bg-gray-100/10 px-4 py-2 rounded-full flex items-center gap-2"
+									>
+										<span>
+											<Icon icon={item.icon} width={20} />
 										</span>
+										<span className="">{item.name}</span>
 									</li>
 								))}
 							</ul>
