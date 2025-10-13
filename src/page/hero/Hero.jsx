@@ -1,10 +1,10 @@
 import NeonButton from "../../components/Button";
 import TypingExample from "../../components/UI/TypingText";
-import TypingText from "../../components/UI/TypingText";
-import heroImage from "../../assets/images/myProfilepic.jpg"
+import heroImage from "../../assets/images/myProfilepic.jpg";
+import Tilt from "react-parallax-tilt";
 
 const Hero = () => {
-  return (
+	return (
 		<section className="min-h-screen">
 			<div className="absolute top-15 left-15 w-72 h-72 bg-purple-500 opacity-30 rounded-full filter blur-3xl animate-pulse z-0" />{" "}
 			<div className="section-container flex justify-between  min-h-screen flex-col md:flex-row">
@@ -31,31 +31,30 @@ const Hero = () => {
 				</div>
 
 				{/* Hero right */}
-				<div className="flex-1 flex justify-center items-center  mt-[80px]">
-					<img
-						src={heroImage}
-						alt="hero image"
-						className="
-						md:w-[60%] 
-						w-[80%]
-						md:mt-[-50px]
-						rounded-full 
-						shadow-[0_0_10px_#a855f7,0_0_10px_#a855f7,0_0_60px_#a855f7] 
-						transition 
-						duration-300 
-						hover:shadow-[0_0_20px_#a855f7,0_0_20px_#a855f7,0_0_90px_#a855f7]
+				<div className="flex-1 flex justify-center items-center mt-[80px]">
+					<Tilt
+						tiltMaxAngleX={15}
+						tiltMaxAngleY={15}
+						className="flex justify-center items-center"
+					>
+						<img
+							src={heroImage}
+							alt="hero image"
+							className="
+							md:w-[60%] 
+							w-[80%]
+							md:mt-[-50px]
+							rounded-full 
+							shadow-[0_0_10px_#a855f7,0_0_10px_#a855f7,0_0_60px_#a855f7] 
+							transition 
+							duration-300 
 						"
-					/>
+						/>
+					</Tilt>
 				</div>
 			</div>
 		</section>
-  );
-}
+	);
+};
 
-export default Hero
-
-
-
-
-
-
+export default Hero;
