@@ -54,9 +54,7 @@ const Navbar = () => {
 	return (
 		<section
 			className={`fixed w-full z-10 transition-shadow ${
-				navBgActive
-					? "shadow-xl bg-black/80 backdrop-blur"
-					: "bg-transparent"
+				navBgActive ? "shadow-xl backdrop-blur" : "bg-transparent"
 			}`}
 		>
 			<div className="section-container h-[80px] flex justify-between items-center">
@@ -79,13 +77,15 @@ const Navbar = () => {
 				{/* Social Icons (Desktop) */}
 				<div className="text-white gap-4 hidden md:flex">
 					<a
-						href="#"
+						href="https://github.com/SanjayMaity15"
+						target="_blank"
 						className="text-xl hover:text-purple-600 transition-colors duration-300"
 					>
 						<FaGithub />
 					</a>
 					<a
-						href="#"
+						href="https://www.linkedin.com/in/sanjaymaity15/"
+						target="_blank"
 						className="text-xl hover:text-purple-600 transition-colors duration-300"
 					>
 						<FaLinkedin />
@@ -106,7 +106,7 @@ const Navbar = () => {
 
 				{/* Mobile Menu */}
 				<div
-					className={`md:hidden fixed top-0 left-0 w-full mt-[80px] h-[50%] bg-purple-950/10 flex justify-center items-center text-center transition-transform duration-300 z-40 ${
+					className={`md:hidden fixed top-0 left-0 w-full mt-[80px] h-[50%] bg-black/75 flex justify-center items-center text-center transition-transform duration-300 z-40 ${
 						isMobileMenuActive
 							? "translate-x-0"
 							: "-translate-x-full"

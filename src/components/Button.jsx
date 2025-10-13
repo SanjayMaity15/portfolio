@@ -1,9 +1,11 @@
 import React from "react";
 
-const NeonButton = ({ text, onClick }) => {
+
+const NeonButton = ({ text }) => {
 	return (
-		<button
-			onClick={onClick}
+		<a
+			href="./Sanjay_Maity_Resume.pdf"
+			download
 			className={`
         relative 
         inline-block 
@@ -31,7 +33,7 @@ const NeonButton = ({ text, onClick }) => {
       `}
 		>
 			{text}
-		</button>
+		</a>
 	);
 };
 
