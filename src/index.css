@@ -18,6 +18,6 @@ body {
 }
 
 .section-container{
-  @apply max-w-screen-xl px-6 py-4 m-auto font-primary
+  @apply max-w-screen-xl px-6 py-2 m-auto font-primary
 }
 

@@ -6,7 +6,7 @@ const Project = () => {
 	return (
 		<section className="pt-[80px]">
 			<div className="section-container text-white">
-				<h3 className="text-center text-4xl font-semibold mt-4 uppercase">
+				<h3 className="text-center text-4xl font-semibold uppercase">
 					Projects
 				</h3>
 				<div className="h-1 w-20 m-auto mt-3  bg-purple-600" />
@@ -17,7 +17,7 @@ const Project = () => {
 				</p>
 
 				{/* project container */}
-				<div className="mb-16">
+				<div >
 					<ul className="grid md:grid-cols-2 gap-8">
 						{projects.map((item) => (
 							<li

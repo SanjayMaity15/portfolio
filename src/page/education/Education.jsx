@@ -4,7 +4,7 @@ const Education = () => {
 	return (
 		<section className="pt-[80px]">
 			<div className="section-container text-white relative">
-				<h3 className="text-4xl font-semibold text-center mt-4 uppercase">
+				<h3 className="text-4xl font-semibold text-center uppercase">
 					Education
 				</h3>
 
@@ -17,7 +17,7 @@ const Education = () => {
 				{/* Timeline */}
 				<div className="mt-16 relative">
 					{/* Vertical line */}
-					<div className="absolute left-1 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gray-400"></div>
+					<div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gray-400"></div>
 
 					<ul className="flex flex-col gap-12">
 						{educationData.map((education, index) => (
@@ -33,7 +33,7 @@ const Education = () => {
 								`}
 							>
 								{/* Dot on line */}
-								<span className="absolute left-[-10px] md:left-[-12px] top-4 w-4 h-4 bg-blue-500 rounded-full border-2 border-white" />
+								<span className="absolute left-[-8px] md:left-[-12px] top-4 w-4 h-4 bg-blue-500 rounded-full border-2 border-white" />
 
 								<h3 className="text-xl font-semibold mb-2 text-purple-600">
 									{education.title}
