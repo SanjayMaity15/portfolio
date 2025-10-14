@@ -6,7 +6,7 @@ const Footer = () => {
 		<section className="pt-16">
 			<div className="section-container text-gray-300 py-8 mx-auto px-4 flex flex-col-reverse items-center justify-center gap-4">
 				{/* Center: Navigation Links */}
-				<nav className="flex space-x-6">
+				<nav className="flex md:space-x-6 md:flex-row flex-col items-center text-center justify-center">
 					<a href="/" className="hover:text-purple-500 transition">
 						Home
 					</a>
@@ -54,7 +54,6 @@ const Footer = () => {
 					</a>
 				</div>
 			</div>
-
 			{/* Bottom copyright */}
 			<div className="text-center text-gray-400 mb-12 text-sm mt-6">
 				&copy; {new Date().getFullYear()} Sanjay Maity. All rights
