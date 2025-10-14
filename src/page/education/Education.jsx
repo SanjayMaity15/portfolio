@@ -2,13 +2,14 @@ import { educationData } from "../../utils/education";
 
 const Education = () => {
 	return (
-		<section className="pt-[80px]"> 
+		<section className="pt-[80px]">
 			<div className="section-container text-white relative">
-				<h3 className="text-4xl font-semibold text-center mt-4">
+				<h3 className="text-4xl font-semibold text-center mt-4 uppercase">
 					Education
 				</h3>
 
-				<p className="text-gray-300 text-center mt-4 max-w-xl mx-auto">
+				<div className="h-1 w-20 m-auto mt-3  bg-purple-600" />
+				<p className="text-gray-300 text-center mt-4">
 					A summary of my academic background, highlighting the
 					knowledge and skills gained
 				</p>
@@ -22,9 +23,14 @@ const Education = () => {
 						{educationData.map((education, index) => (
 							<li
 								key={education.id}
-								className={`relative max-w-[90%] md:max-w-[45%] p-5 rounded-2xl bg-gray-900/80 border border-purple-700
-								 ${index % 2 === 0 ? "self-center md:self-end" : "self-center md:self-start"}
-								 md:[&:nth-child(even)]:ml-auto md:[&:nth-child(odd)]:mr-auto`}
+								className={`relative max-w-[90%] lg:max-w-[30%] md:max-w-[40%] p-5 rounded-2xl bg-gray-900/80 border border-purple-700
+								 ${
+										index % 2 !== 0
+											? "self-center md:self-end lg:mr-50 md:mr-10"
+											: "self-center md:self-start lg:ml-50 md:ml-10"
+									}
+                                 
+								`}
 							>
 								{/* Dot on line */}
 								<span className="absolute left-[-10px] md:left-[-12px] top-4 w-4 h-4 bg-blue-500 rounded-full border-2 border-white" />

@@ -16,9 +16,10 @@ const Skills = () => {
 	return (
 		<section className="pt-[80px]">
 			<div className="section-container text-white">
-				<h2 className="text-center text-4xl font-semibold mt-4">
+				<h2 className="text-center text-4xl font-semibold mt-4 up">
 					My Skills
 				</h2>
+				<div className="h-1 w-20 m-auto mt-3  bg-purple-600"/>
 				<p className="text-center text-gray-300 mt-4">
 					This section showcases the technical skills and development
 					expertise I’ve refined through building real-world web

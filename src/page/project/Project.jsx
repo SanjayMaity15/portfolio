@@ -6,9 +6,10 @@ const Project = () => {
 	return (
 		<section className="pt-[80px]">
 			<div className="section-container text-white">
-				<h3 className="text-center text-4xl font-semibold mt-4">
+				<h3 className="text-center text-4xl font-semibold mt-4 uppercase">
 					Projects
 				</h3>
+				<div className="h-1 w-20 m-auto mt-3  bg-purple-600" />
 				<p className="text-center text-gray-300 mt-4 mb-16">
 					A selection of projects that demonstrate my skills in
 					building real-world web applications with clean code and
@@ -48,14 +49,26 @@ const Project = () => {
 									))}
 								</span>
 
-								<div className="flex gap-4 p-4">
+								<div className="flex gap-4 p-4 ">
 									<div className="flex items-center bg-purple-600 hover:bg-purple-900 transition-colors duration-300 cursor-pointer px-4 py-2 rounded-sm gap-2">
 										<FaGithub />
-										<a href={item.github} className="cursor-pointer" target="_blank">Code</a>
+										<a
+											href={item.github}
+											className="cursor-pointer"
+											target="_blank"
+										>
+											Code
+										</a>
 									</div>
 									<div className="flex items-center bg-purple-600 hover:bg-purple-900 transition-colors duration-300 px-4 py-2 cursor-pointer rounded-sm gap-2">
 										<FaExternalLinkAlt />
-										<a href={item.link} className="cursor-pointer" target="_blank">Live Preview</a>
+										<a
+											href={item.link}
+											className="cursor-pointer"
+											target="_blank"
+										>
+											Live Preview
+										</a>
 									</div>
 								</div>
 							</li>
