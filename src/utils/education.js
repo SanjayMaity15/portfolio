@@ -1,7 +1,7 @@
-import secondary from "../assets/images/secondary.png"
-import higher from "../assets/images/higher.jpg"
-import college from "../assets/images/college.jpg"
-import diploma from "../assets/images/diploma.png"
+import secondary from "../assets/images/secondary.png";
+import higher from "../assets/images/higher.jpg";
+import college from "../assets/images/college.jpg";
+import diploma from "../assets/images/diploma.png";
 
 export const educationData = [
 	{
@@ -20,7 +20,7 @@ export const educationData = [
 		institute: "Arambagh government polytechnic",
 		year: "2019 - 2022",
 		description:
-			"Completed a Diploma in Computer Engineering with a focus on foundational technical education.",
+			"Completed Diploma with a focus on foundational technical education.",
 	},
 	{
 		id: 3,
@@ -41,8 +41,3 @@ export const educationData = [
 			"Completed general secondary education with emphasis on foundational subjects such as Mathematics, Science, and English.",
 	},
 ];
-
-
-
-
-
