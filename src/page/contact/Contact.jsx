@@ -61,7 +61,7 @@ const Contact = () => {
 	return (
 		<section className="pt-[80px]">
 			<div className="section-container text-white">
-				<h3 className="text-4xl font-semibold text-center mb-6 mt-4">
+				<h3 className="text-4xl font-semibold text-center mb-4 mt-4">
 					Contact Me
 				</h3>
 				<div className="h-1 w-20 m-auto mt-3  bg-purple-600" />

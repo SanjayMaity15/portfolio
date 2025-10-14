@@ -20,7 +20,7 @@ export const educationData = [
 		institute: "Arambagh government polytechnic",
 		year: "2019 - 2022",
 		description:
-			"Completed Diploma with a focus on foundational technical education.",
+			"Completed Diploma with an emphasis on foundational technical education and practical skills development.",
 	},
 	{
 		id: 3,
