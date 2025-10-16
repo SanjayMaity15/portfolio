@@ -1,6 +1,6 @@
 import NeonButton from "../../components/Button";
 import TypingExample from "../../components/UI/TypingText";
-import heroImage from "../../assets/images/myProfilepic.jpg";
+import heroImage from "../../assets/images/sanjay.png";
 import Tilt from "react-parallax-tilt";
 
 const Hero = () => {
