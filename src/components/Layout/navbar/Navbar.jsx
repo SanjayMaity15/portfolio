@@ -62,10 +62,10 @@ const Navbar = () => {
 				{/* Logo / Name */}
 				<div>
 					<Link to="/">
-						<p className="text-white font-semibold text-lg">
-							<span className="text-purple-600">&lt; </span>Sanjay{" "}
-							<span className="text-purple-600">/</span> Maity{" "}
-							<span className="text-purple-600">&gt;</span>
+						<p className="text-white font-bold tracking-wide text-lg ">
+							<span className="text-purple-600 font-bold">&lt; </span>Sanjay{" "}
+							<span className="text-purple-600 font-bold">/</span> Maity{" "}
+							<span className="text-purple-600 font-bold">&gt;</span>
 						</p>
 					</Link>
 				</div>
