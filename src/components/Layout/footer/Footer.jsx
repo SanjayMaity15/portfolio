@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -7,33 +8,33 @@ const Footer = () => {
 			<div className="section-container text-gray-300 py-8 mx-auto px-4 flex flex-col-reverse items-center justify-center gap-4">
 				{/* Center: Navigation Links */}
 				<nav className="flex md:space-x-6 md:flex-row flex-col items-center text-center justify-center">
-					<a href="/" className="hover:text-purple-500 transition">
+					<Link to="/" className="hover:text-purple-500 transition">
 						Home
-					</a>
-					<a
-						href="/skill"
+					</Link>
+					<Link
+						to="/skill"
 						className="hover:text-purple-500 transition"
 					>
 						Skill
-					</a>
-					<a
-						href="/project"
+					</Link>
+					<Link
+						to="/project"
 						className="hover:text-purple-500 transition"
 					>
 						Projects
-					</a>
-					<a
-						href="/education"
+					</Link>
+					<Link
+						to="/education"
 						className="hover:text-purple-500 transition"
 					>
 						Education
-					</a>
-					<a
-						href="/contact"
+					</Link>
+					<Link
+						to="/contact"
 						className="hover:text-purple-500 transition"
 					>
 						Contact
-					</a>
+					</Link>
 				</nav>
 
 				{/* Right: Social Icons */}

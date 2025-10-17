@@ -1,8 +1,14 @@
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { projects } from "../../utils/projects";
 import { Icon } from "@iconify/react";
+import { useEffect } from "react";
 
 const Project = () => {
+	useEffect(() => {
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}, []);
+
+	
 	return (
 		<section className="pt-[80px]">
 			<div className="section-container text-white">
@@ -17,7 +23,7 @@ const Project = () => {
 				</p>
 
 				{/* project container */}
-				<div >
+				<div>
 					<ul className="grid md:grid-cols-2 gap-8">
 						{projects.map((item) => (
 							<li

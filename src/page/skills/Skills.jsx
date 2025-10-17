@@ -6,12 +6,13 @@ import {
 } from "../../utils/techSkill"; 
 import Tilt from "react-parallax-tilt";
 import { Icon } from "@iconify/react";
+import { useEffect } from "react";
 
 const Skills = () => {
-	console.log(programmingLanguages);
-	console.log(mernTools);
-	console.log(mernBackendSkills);
-	console.log(mernFrontendSkills);
+
+	useEffect(() => {
+		window.scrollTo({top: 0, behavior: "smooth"})
+	}, []) 
 
 	return (
 		<section className="pt-[80px]">

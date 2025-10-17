@@ -2,12 +2,16 @@ import NeonButton from "../../components/Button";
 import TypingExample from "../../components/UI/TypingText";
 import heroImage from "../../assets/images/sanjay.png";
 import Tilt from "react-parallax-tilt";
+import { useEffect } from "react";
 
 const Hero = () => {
+	useEffect(() => {
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}, []);
+	
 	return (
 		<section className="min-h-screen pt-[80px]">
 			<div className="section-container relative flex justify-between  min-h-screen flex-col md:flex-row gap-12 md:gap-0">
-
 				{/* blob effect */}
 				<div className="absolute top-15 left-15 w-72 h-72 bg-purple-500 opacity-30 rounded-full filter blur-3xl animate-pulse z-0" />
 
@@ -22,9 +26,9 @@ const Hero = () => {
 
 					<p className="mt-2 mb-8 lg:w-4/5 text-gray-300">
 						I’m a full stack developer skilled in JavaScript, React,
-						Node.js, Express.js and MongoDB. I’ve built responsive, scalable
-						projects and am eager to grow professionally while
-						learning new technologies and creating impactful
+						Node.js, Express.js and MongoDB. I’ve built responsive,
+						scalable projects and am eager to grow professionally
+						while learning new technologies and creating impactful
 						software.
 					</p>
 

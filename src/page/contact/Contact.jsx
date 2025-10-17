@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ClipLoader } from "react-spinners";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 
 const Contact = () => {
 	const [formData, setFormData] = useState({
@@ -13,11 +12,9 @@ const Contact = () => {
 		message: "",
 	});
 
-  
-   const [loading, setLoading] = useState(false);
+	const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
-    
+	const handleChange = (e) => {
 		const { name, value } = e.target;
 		setFormData((prev) => ({
 			...prev,
@@ -26,10 +23,8 @@ const Contact = () => {
 	};
 
 	const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-    
-    
+		e.preventDefault();
+		setLoading(true);
 
 		emailjs
 			.send(
@@ -41,8 +36,8 @@ const Contact = () => {
 			.then(
 				(result) => {
 					console.log(result.text);
-          toast.success("Message sent successfully");
-          setLoading(false);
+					toast.success("Message sent successfully");
+					setLoading(false);
 					setFormData({
 						user_name: "",
 						user_email: "",
@@ -52,11 +47,15 @@ const Contact = () => {
 				},
 				(error) => {
 					console.error(error.text);
-          toast.error("Error: Message not sent");
-          setLoading(false)
+					toast.error("Error: Message not sent");
+					setLoading(false);
 				}
 			);
 	};
+
+	useEffect(() => {
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}, []);
 
 	return (
 		<section className="pt-[80px]">

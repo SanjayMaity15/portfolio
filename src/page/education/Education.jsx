@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { educationData } from "../../utils/education";
 
 const Education = () => {
+	useEffect(() => {
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}, []);
+
 	return (
 		<section className="pt-[80px]">
 			<div className="section-container text-white relative">
