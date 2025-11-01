@@ -30,7 +30,7 @@ const Project = () => {
 								key={item.id}
 								className="border rounded-2xl overflow-hidden"
 							>
-								{console.log(item)}
+								
 								<img src={item.image} alt={item.name} />
 
 								<h4 className="text-xl font-semibold p-4 text-purple-600">

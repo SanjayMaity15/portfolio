@@ -1,3 +1,4 @@
+import MouseShadow from "../../components/UI/MouseShadow";
 import Contact from "../contact/Contact";
 import Education from "../education/Education";
 import Hero from "../hero/Hero";
@@ -7,6 +8,7 @@ import Skills from "../skills/Skills";
 const Home = () => {
 	return (
 		<>
+			<MouseShadow/>
 			<Hero />
 			<Skills />
 			<Project />
