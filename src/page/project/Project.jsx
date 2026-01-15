@@ -24,16 +24,16 @@ const Project = () => {
 
 				{/* project container */}
 				<div>
-					<ul className="grid md:grid-cols-2 gap-8">
+					<ul className="grid md:grid-cols-2 gap-12 ">
 						{projects.map((item) => (
 							<li
 								key={item.id}
 								className="border rounded-2xl overflow-hidden"
 							>
 								
-								<img src={item.image} alt={item.name} />
+								<img src={item.image} alt={item.name} className="md:max-h-[50%] w-full md:min-h-[50%]"/>
 
-								<h4 className="text-xl font-semibold p-4 text-purple-600">
+								<h4 className="text-xl font-semibold p-4 text-yellow-400 uppercase">
 									{item.name}
 								</h4>
 
