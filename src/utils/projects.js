@@ -4,6 +4,7 @@ import nikee from "../assets/images/nikee.png";
 import ems from "../assets/images/ems.png";
 import exp from "../assets/images/exp.png";
 import news from "../assets/images/news.png";
+import skyfer from "../assets/images/skyfer.png";
 
 // ✅ Example skills (you can reuse your actual skill data if you prefer)
 export const skills = [
@@ -59,12 +60,30 @@ export const skills = [
 export const projects = [
 	{
 		id: 1,
+		image: skyfer,
+		name: "Skyfer - A cloud storage app",
+		skills: [
+			skills[3],
+			skills[4],
+
+			skills[6],
+			skills[7],
+			skills[8],
+			skills[9],
+			skills[11],
+			skills[12],
+		],
+		github: "https://github.com/SanjayMaity15/skyfer-cloud-storage-web-app.git",
+		link: "https://skyfer.sanjaymaity.online",
+	},
+	{
+		id: 2,
 		image: ems,
 		name: "Staffsyncsm - an employee management system",
 		skills: [
 			skills[3],
 			skills[4],
-			
+
 			skills[6],
 			skills[7],
 			skills[8],
@@ -76,7 +95,7 @@ export const projects = [
 		link: "http://staffsyncsm.vercel.app",
 	},
 	{
-		id: 2,
+		id: 3,
 		image: exp,
 		name: "FinsTrack - an Expense tracker",
 		skills: [
@@ -92,22 +111,25 @@ export const projects = [
 		github: "https://github.com/SanjayMaity15/expense-tracker.git",
 		link: "http://finstrack.vercel.app",
 	},
-	{
-		id: 3,
-		image: news,
-		name: "MTYNews - A news website",
-		skills: [
-		
-			skills[3],
-			skills[4],
-			
-			skills[6],
-		],
-		github: "https://github.com/SanjayMaity15/news-app.git",
-		link: "http://mty-news.vercel.app",
-	},
+
 	{
 		id: 4,
+		image: farnique,
+		name: "Farnique - Furniture Website",
+		skills: [
+			skills[0],
+			skills[1],
+			skills[2],
+			skills[3],
+			skills[4],
+			skills[6],
+		],
+		github: "https://github.com/SanjayMaity15/farnique_furniture_website_react.git",
+		link: "http://farnique.vercel.app",
+	},
+
+	{
+		id: 5,
 		image: nikee,
 		name: "Nikee - Shoe Website",
 		skills: [
@@ -122,18 +144,11 @@ export const projects = [
 		link: "http://nikee-shoe.vercel.app",
 	},
 	{
-		id: 5,
-		image: farnique,
-		name: "Farnique - Furniture Website",
-		skills: [
-			skills[0],
-			skills[1],
-			skills[2],
-			skills[3],
-			skills[4],
-			skills[6],
-		],
-		github: "https://github.com/SanjayMaity15/farnique_furniture_website_react.git",
-		link: "http://farnique.vercel.app",
+		id: 6,
+		image: news,
+		name: "MTYNews - A news website",
+		skills: [skills[3], skills[4], skills[6]],
+		github: "https://github.com/SanjayMaity15/news-app.git",
+		link: "http://mty-news.vercel.app",
 	},
 ];
