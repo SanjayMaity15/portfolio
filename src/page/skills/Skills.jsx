@@ -20,14 +20,14 @@ const Skills = () => {
 				<h2 className="text-center text-4xl font-semibold up">
 					My Skills
 				</h2>
-				<div className="h-1 w-20 m-auto mt-3  bg-purple-600"/>
+				<div className="h-1 w-20 m-auto mt-3  bg-purple-600" />
 				<p className="text-center text-gray-300 mt-4">
 					This section showcases the technical skills and development
 					expertise I’ve refined through building real-world web
 					projects.
 				</p>
 
-				<div className="grid md:grid-cols-2 mt-16 gap-8">
+				<div className="grid mt-16 gap-8">
 					{/* frontend */}
 
 					<Tilt
@@ -35,7 +35,7 @@ const Skills = () => {
 						tiltMaxAngleY={15}
 						className="flex justify-center items-center"
 					>
-						<div className="min-h-[150px] border p-4 rounded-2xl border-purple-900">
+						<div className=" w-full border p-4 rounded-2xl border-purple-900 flex flex-col items-center">
 							<h3 className="text-xl text-center font-bold text-purple-600 m-3">
 								Frontend
 							</h3>
@@ -62,7 +62,7 @@ const Skills = () => {
 						tiltMaxAngleY={15}
 						className="flex justify-center items-center"
 					>
-						<div className="min-h-[150px] border p-4  rounded-2xl border-purple-900">
+						<div className="w-full border p-4  rounded-2xl border-purple-900 flex flex-col items-center">
 							<h3 className="text-xl text-center font-bold text-purple-600 m-3">
 								Backend
 							</h3>
@@ -88,7 +88,7 @@ const Skills = () => {
 						tiltMaxAngleY={15}
 						className="flex justify-center items-center"
 					>
-						<div className="min-h-[150px] border w-full p-4 border-purple-900  rounded-2xl">
+						<div className="w-full border p-4 border-purple-900  rounded-2xl flex flex-col items-center">
 							<h3 className="text-xl text-center font-bold m-3 text-purple-600">
 								Language
 							</h3>
@@ -114,7 +114,7 @@ const Skills = () => {
 						tiltMaxAngleY={15}
 						className="flex justify-center items-center"
 					>
-						<div className="min-h-[150px] border p-4 rounded-2xl border-purple-900 ">
+						<div className="w-full border p-4 rounded-2xl border-purple-900 flex flex-col items-center">
 							<h3 className="text-xl text-center font-bold m-3 text-purple-600">
 								Tools
 							</h3>

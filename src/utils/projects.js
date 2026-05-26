@@ -1,9 +1,9 @@
 // 🔁 Import images
 import farnique from "../assets/images/farnique.png";
-import nikee from "../assets/images/nikee.png";
-import ems from "../assets/images/ems.png";
+import wallkify from "../assets/images/wallkify.png";
 import exp from "../assets/images/exp.png";
-import news from "../assets/images/news.png";
+import brieflly from "../assets/images/brieflly.png";
+import freshmart from "../assets/images/freshmart.png";
 import skyfer from "../assets/images/skyfer.png";
 
 // ✅ Example skills (you can reuse your actual skill data if you prefer)
@@ -65,7 +65,6 @@ export const projects = [
 		skills: [
 			skills[3],
 			skills[4],
-
 			skills[6],
 			skills[7],
 			skills[8],
@@ -74,28 +73,11 @@ export const projects = [
 			skills[12],
 		],
 		github: "https://github.com/SanjayMaity15/skyfer-cloud-storage-web-app.git",
-		link: "https://skyfer.sanjaymaity.online",
+		link: "https://skyfer.cloud",
 	},
+
 	{
 		id: 2,
-		image: ems,
-		name: "Staffsyncsm - an employee management system",
-		skills: [
-			skills[3],
-			skills[4],
-
-			skills[6],
-			skills[7],
-			skills[8],
-			skills[9],
-			skills[11],
-			skills[12],
-		],
-		github: "https://github.com/SanjayMaity15/employee-management-system.git",
-		link: "http://staffsyncsm.vercel.app",
-	},
-	{
-		id: 3,
 		image: exp,
 		name: "FinsTrack - an Expense tracker",
 		skills: [
@@ -113,7 +95,7 @@ export const projects = [
 	},
 
 	{
-		id: 4,
+		id: 3,
 		image: farnique,
 		name: "Farnique - Furniture Website",
 		skills: [
@@ -129,9 +111,9 @@ export const projects = [
 	},
 
 	{
-		id: 5,
-		image: nikee,
-		name: "Nikee - Shoe Website",
+		id: 4,
+		image: wallkify,
+		name: "wallkify - Shoe Website",
 		skills: [
 			skills[0],
 			skills[1],
@@ -140,15 +122,31 @@ export const projects = [
 			skills[4],
 			skills[6],
 		],
-		github: "https://github.com/SanjayMaity15/NIKEE-SHOE-WEBSITE-USING-REACT-REDUX.git",
-		link: "http://nikee-shoe.vercel.app",
+		github: "https://github.com/SanjayMaity15/WALLKIFY-SHOE-WEBSITE-USING-REACT-REDUX.git",
+		link: "http://wallkify.vercel.app",
+	},
+
+	{
+		id: 5,
+		image: freshmart,
+		name: "freshmart - A vegetables shop",
+		skills: [
+			skills[0],
+			skills[1],
+			skills[2],
+			skills[3],
+			skills[4],
+			skills[6],
+		],
+		github: "https://github.com/SanjayMaity15/freshmart.git",
+		link: "http://freshmartx.vercel.app",
 	},
 	{
 		id: 6,
-		image: news,
-		name: "MTYNews - A news website",
+		image: brieflly,
+		name: "brieflly - A news website",
 		skills: [skills[3], skills[4], skills[6]],
-		github: "https://github.com/SanjayMaity15/news-app.git",
-		link: "http://mty-news.vercel.app",
+		github: "https://github.com/SanjayMaity15/brieflly-news-app.git",
+		link: "http://brieflly.vercel.app",
 	},
 ];

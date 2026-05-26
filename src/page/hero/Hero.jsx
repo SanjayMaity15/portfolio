@@ -1,6 +1,6 @@
 import NeonButton from "../../components/Button";
 import TypingExample from "../../components/UI/TypingText";
-import heroImage from "../../assets/images/sanjay.png";
+import heroImage from "../../assets/images/sanjay.jpeg";
 import Tilt from "react-parallax-tilt";
 import { useEffect } from "react";
 

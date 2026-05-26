@@ -13,7 +13,7 @@ export const mernTools = [
 	{ id: 4, name: "Postman", icon: "logos:postman-icon" },
 	{ id: 5, name: "Netlify", icon: "devicon:netlify" },
 	{ id: 6, name: "MongoDB Atlas", icon: "devicon:mongodb" },
-	{ id: 7, name: "Webpack", icon: "logos:webpack" },
+	{ id: 7, name: "Vercel", icon: "devicon:vercel" },
 	{ id: 8, name: "ESLint", icon: "logos:eslint" },
 ];
 
@@ -25,7 +25,13 @@ export const mernBackendSkills = [
 	{ id: 4, name: "Mongoose", icon: "simple-icons:mongoose" },
 	{ id: 5, name: "RESTful APIs", icon: "material-symbols:api" },
 	{ id: 6, name: "JWT Authentication", icon: "logos:jwt-icon" },
-	{ id: 7, name: "bcrypt", icon: "mdi:lock" }, // bcrypt has no direct icon, using lock
+	{ id: 7, name: "bcrypt", icon: "mdi:lock" },
+
+	{ id: 8, name: "WebSockets", icon: "mdi:web" },
+	{ id: 9, name: "Redis", icon: "logos:redis" },
+	{ id: 10, name: "AWS", icon: "logos:aws" },
+	{ id: 11, name: "Google Cloud", icon: "logos:google-cloud" },
+	{ id: 12, name: "Console & Debugging", icon: "mdi:console" },
 ];
 
 // ✅ Frontend Skills
